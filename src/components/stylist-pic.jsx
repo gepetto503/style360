@@ -3,8 +3,8 @@ import React from 'react';
 
 const StylistPic = (props) => {
   return (
-    <div>
-      <h3>some pic</h3>
+    <div className="stylist-pic">
+      <div className="circle"></div>
     </div>
   )
 }

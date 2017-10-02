@@ -6,13 +6,8 @@ import InputData from './input-data';
 class App extends Component {
   render() {
     return (
-      <div className="page">
-        <div className="background">
-          <div className="stylist-info-wrapper">
-            <StylistInfo inputData={InputData}></StylistInfo>
-
-          </div>
-        </div>
+      <div>
+        <StylistInfo inputData={InputData}></StylistInfo>
       </div>
     );
   }
