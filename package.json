@@ -10,11 +10,11 @@
     "react-scripts": "1.0.14"
   },
   "scripts": {
-    "start": "react-scripts-with-sass start",
-    "build": "react-scripts-with-sass build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass" : "sass --watch src/stylesheets/scss:src/stylesheets/css" 
+    "sass" : "sass --watch src/stylesheets/scss:src/stylesheets/css"
   },
   "devDependencies": {
     "create-react-app-sass": "^1.1.0"
