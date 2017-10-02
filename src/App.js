@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
 import StylistInfo from './components/stylist-info';
+import InputData from './input-data';
 
 class App extends Component {
   render() {
@@ -8,7 +9,7 @@ class App extends Component {
       <div className="page">
         <div className="background">
           <div className="stylist-info-wrapper">
-            <StylistInfo></StylistInfo>
+            <StylistInfo inputData={InputData}></StylistInfo>
 
           </div>
         </div>
