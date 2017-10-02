@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import StylistInfo from './components/stylist-info';
 import InputData from './input-data';
 
+
 class App extends Component {
   render() {
     return (
