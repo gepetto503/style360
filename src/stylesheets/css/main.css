@@ -1,25 +1,57 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16pt;
+  font-size: 24pt;
   color: white; }
 
+p {
+  font-size: 1em; }
+  @media (min-width: 750px) {
+    p {
+      font-size: .667em; } }
+  @media (min-width: 970px) {
+    p {
+      font-size: .833em; } }
+  @media (min-width: 1170px) {
+    p {
+      font-size: 1em; } }
+
 h1 {
-  font-weight: 400; }
+  font-weight: 600;
+  font-size: 1.5em; }
+  @media (min-width: 970px) {
+    h1 {
+      font-size: 2.167em; } }
+  @media (min-width: 1170px) {
+    h1 {
+      font-size: 2.5em; } }
 
-h4 {
-  font-weight: 400; }
+h2 {
+  font-size: .75em; }
+  @media (min-width: 970px) {
+    h2 {
+      font-size: 1em;
+      font-weight: bold; } }
 
-/*.layer {
-  border: 3px solid red;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}*/
+button, .button {
+  font-size: .583em;
+  font-weight: 600; }
+  @media (min-width: 970px) {
+    button, .button {
+      font-size: .75em; } }
+  @media (min-width: 1170px) {
+    button, .button {
+      font-size: .833em; } }
+
+footer, .footer {
+  font-size: .5em; }
+  @media (min-width: 970px) {
+    footer, .footer {
+      font-size: .75em; } }
+
 .icon-circle {
   border-radius: 50%;
   border: 2px solid white;
@@ -38,45 +70,84 @@ h4 {
   margin-top: 30px;
   border: 2px solid lightgrey;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(225, 225, 225, 0.15);
   display: flex;
-  height: 50px;
-  align-items: center; }
+  height: 55px;
+  align-items: center;
+  padding: 0px 10px; }
+  @media (min-width: 750px) {
+    .buttons {
+      height: 45px; } }
   .buttons .button {
+    padding: 0px 10px;
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-transform: uppercase; }
-    .buttons .button:first-child {
-      border-right: 2px solid white; }
+    text-transform: uppercase;
+    border-right: 2px solid white; }
+    .buttons .button:last-child {
+      border-right: 0; }
 
 .icons-wrapper {
   display: flex;
   justify-content: space-around;
   margin: auto; }
 
-.page {
+.page .background {
   display: flex;
-  justify-content: center; }
-  .page .background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/tim-mossholder-285543.jpg");
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    height: 100%;
-    width: 1170px; }
-    .page .background .stylist-info {
-      padding: 40px; }
-    .page .background .stylist-text {
-      color: white;
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 30px; }
-      .page .background .stylist-text h1, .page .background .stylist-text h4 {
-        margin: 0; }
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/tim-mossholder-285543.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh; }
+
+.stylist-info {
+  padding: 20px; }
+  @media (min-width: 750px) {
+    .stylist-info {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media (min-width: 750px) {
+    .stylist-info .stylist-pic {
+      margin-right: 20px; } }
+  .stylist-info .stylist-other-stuff .stylist-text {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    @media (min-width: 750px) {
+      .stylist-info .stylist-other-stuff .stylist-text {
+        margin-left: 20px;
+        text-align: left; } }
+    .stylist-info .stylist-other-stuff .stylist-text .name-and-summary h1 {
+      line-height: 1em;
+      margin: 10px; }
+    .stylist-info .stylist-other-stuff .stylist-text .name-and-summary h2 {
+      margin: 10px; }
+    .stylist-info .stylist-other-stuff .stylist-text .address-and-phone {
+      margin-top: 20px; }
+    .stylist-info .stylist-other-stuff .stylist-text .address-and-phone p {
+      margin: 10px; }
+
+@media (min-width: 750px) {
+  .show-on-mobile {
+    display: none; } }
+@media (min-width: 970px) {
+  .show-on-mobile {
+    display: none; } }
+
+.show-on-tablet {
+  display: none; }
+  @media (min-width: 750px) {
+    .show-on-tablet {
+      display: block; } }
 
 .circle {
   margin: auto;
@@ -86,5 +157,10 @@ h4 {
   border: 7px solid #4f5051;
   background: url("http://www.oranjstudio.com/t/width=1400/scale/width=700/height=700/top=1/left=1/crop/f//channels/website/images/TEAM/oranj-staff-tam-1400x800.jpg/poster.jpg") right center no-repeat;
   background-size: cover; }
+  @media (min-width: 970px) {
+    .circle {
+      height: 340px;
+      width: 340px;
+      border: 9px solid #4f5051; } }
 
 /*# sourceMappingURL=main.css.map */
