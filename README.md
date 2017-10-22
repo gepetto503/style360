@@ -1,18 +1,18 @@
-Style 360
+# Style 360
 
-A responsive landing page for stylists (hair/beauty) built in React using create-react-app with Sass.  Deployed on gh-pages: https://gepetto503.github.io/style360/
+#### A responsive landing page for stylists (hair/beauty) built in React using create-react-app with Sass.  Deployed on gh-pages: https://gepetto503.github.io/style360/
 
-This project was an exercise in:
+## This project was an exercise in:
 - setting up environment with create-react-app and sass and deployment with create-react-app/gh-pages
 - responsive styling (mobile, tablet and desktop)
 - passing data down the component tree using props (all the data is in an object inside an input-data.js file, passed into the app component as a prop and then broken up into smaller chunks of data and passed to the appropriate component to be used).
 
-###Dependencies/Technologies:
+### Dependencies/Technologies:
   create-react-app (npm package)
   sass (ruby gem)
   gh-pages (npm package)
 
-##Clone & Serve on Dev Server
+## Clone & Serve on Dev Server
 
 ### Clone and install
   clone project, npm install, install sass gem.
@@ -25,9 +25,9 @@ This project was an exercise in:
   serves on localhost:3000
 
 
-##To set up an app like this one and deploy it on gh-pages through create-react-app
+## To set up an app like this one and deploy it on gh-pages through create-react-app
 
-###Install stuff
+### Install stuff
   install create-react-app:
     $npm install -g create-react-app
 
@@ -35,11 +35,11 @@ This project was an exercise in:
     (instructions here: http://sass-lang.com/install)
     (you will need ruby installer if on windows.  find that here: https://rubyinstaller.org/)
 
-###Create Project
+### Create Project
 generate app:
   create-react-app {app-name}
 
-###Set Up Dependencies
+### Set Up Dependencies
   copy/paste this into your package.json.  change out name and homepage(homepage is the url where gh-pages will ultimately serve it)
   {
     "name": "{project name}",
