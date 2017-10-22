@@ -52,6 +52,29 @@ footer, .footer {
     footer, .footer {
       font-size: .75em; } }
 
+.campus {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  color: white; }
+  .campus h1 {
+    font-size: 5em;
+    font-weight: 400; }
+  .campus h2 {
+    font-size: 4em;
+    font-weight: 400; }
+  .campus h3 {
+    font-size: 3em;
+    font-weight: 400; }
+  .campus h4 {
+    font-size: 2em;
+    font-weight: 400; }
+  .campus h5 {
+    font-size: 1.5em;
+    font-weight: 400; }
+  .campus p, .campus li {
+    font-size: 1em;
+    font-weight: 400; }
+
 .icon-circle {
   border-radius: 50%;
   border: 2px solid white;
@@ -162,5 +185,47 @@ footer, .footer {
       height: 340px;
       width: 340px;
       border: 9px solid #4f5051; } }
+
+.black-bg {
+  background-color: black;
+  min-height: 100vh; }
+
+.el-container {
+  padding: 20px; }
+  .el-container h3, .el-container h4, .el-container h5 {
+    margin: 0; }
+  .el-container h5 {
+    font-weight: bold; }
+    .el-container h5.uppercase {
+      text-transform: uppercase; }
+  .el-container h4 {
+    font-weight: 300; }
+  .el-container .el-time {
+    margin: 10px 0px; }
+
+.el-bg-image {
+  background: url("../../images/hair-yo.jpeg") center center no-repeat;
+  background-size: cover;
+  height: 780px;
+  width: 700px;
+  display: flex;
+  align-items: flex-end; }
+
+.el-content {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: flex-start; }
+
+.el-purple-block {
+  background-color: #9F0377;
+  min-width: 70px;
+  margin-left: 25px;
+  padding: 20px; }
+
+.el-details {
+  padding: 20px 40px; }
+  .el-details h4 {
+    color: #cccccc; }
 
 /*# sourceMappingURL=main.css.map */

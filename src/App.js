@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 // import './App.css';
 import StylistInfo from './components/stylist-info';
 import InputData from './input-data';
+import StyleGuide from './components/style-guide';
+import OurFrameWork from './components/our-framework';
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        <StylistInfo inputData={InputData}></StylistInfo>
+        <OurFrameWork></OurFrameWork>
       </div>
     );
   }
